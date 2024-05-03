@@ -1,0 +1,76 @@
+.container {
+	flex: 0 0 33.3333%;
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: #000;
+	overflow: hidden;
+}
+.imageContainer {
+	overflow: hidden;
+}
+
+.imageContainer img:hover {
+	transform: scale(1.1);
+}
+.imageContainer img {
+	transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+	height: 100%;
+	width: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+.information {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 20px;
+}
+.name {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+}
+.line {
+	color: #595959;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
+}
+.price,
+.discount {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+}
+.discount {
+	color: #595959;
+	font-weight: 100;
+	margin-left: 5px;
+	position: relative;
+}
+.discount::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	height: 0.5px;
+	background-color: #898989;
+}
+@media screen and (max-width: 980px) {
+	.container {
+		padding-left: 20px;
+		flex: 0 0 50%;
+		width: 50%;
+	}
+}
+@media screen and (max-width: 760px) {
+	.container {
+		flex: 0 0 80.90909%;
+		width: 80.90909%;
+	}
+}

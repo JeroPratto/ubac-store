@@ -1,0 +1,52 @@
+.titleAndDetails {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+.title {
+	height: 15px;
+	width: 100%;
+}
+
+.colorName {
+	margin-top: 20px;
+	height: 10px;
+}
+
+.stars {
+	margin-top: 20px;
+	height: 20px;
+}
+
+.textColor {
+	margin-bottom: 20px;
+}
+
+.color {
+	height: 20px;
+	width: 20px;
+	background-color: hsl(200, 20%, 80%);
+	border-radius: 100%;
+}
+.containerBtn button {
+	background-color: hsl(200, 20%, 80%);
+}
+.sizeText {
+	height: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.sizeBtn {
+	background-color: hsl(200, 20%, 80%);
+	color: transparent;
+}
+.addProductBtn {
+	background-color: hsl(200, 20%, 80%);
+	color: transparent;
+}
+
+.cotonImg {
+	margin-top: 40px;
+	background-color: hsl(200, 20%, 80%);
+}

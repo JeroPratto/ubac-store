@@ -1,0 +1,129 @@
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* padding: 10px 0; */
+	padding-top: 10px;
+	background-color: var(--header-bg-color);
+	z-index: 200;
+	transition: top 0.3s ease-out;
+}
+.onTop {
+	border-bottom: 1px solid #e9e7e4;
+}
+.logo {
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0 40px;
+	color: var(--header-current-color);
+	z-index: 10;
+	text-decoration: none;
+}
+.changeLanguage {
+	margin: 0 40px;
+	background-color: #fff;
+	color: #212322;
+	font-size: 10px;
+	font-weight: 600;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.vision {
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0 8px;
+	color: var(--header-current-color);
+	padding: 20px 10px;
+	position: relative;
+	cursor: default;
+}
+
+.vision::after {
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	bottom: 15px;
+	height: 1px;
+	left: 10px;
+	width: calc(100% - 20px);
+	transform: scale(0);
+	transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.vision:hover::after {
+	transform: scale(1);
+}
+
+.cartAndLogin {
+	margin-left: 20px;
+	display: flex;
+}
+.cartAndLogin svg {
+	fill: var(--header-current-color);
+}
+
+.openCart,
+.userLogo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.openCart {
+	border: none;
+	background-color: transparent;
+	padding: 20px 10px;
+	margin-right: 15px;
+	position: relative;
+}
+.openCart svg {
+	height: 22px;
+	width: 18px;
+}
+
+.userLogo svg {
+	height: 22px;
+	width: 18px;
+}
+
+.quantitiy {
+	background-color: #212322;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 10px;
+	height: 14px;
+	position: absolute;
+	top: 15px;
+	right: -2px;
+	width: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 1180px) {
+	.container {
+		padding-top: 12px;
+	}
+	.logo {
+		margin: 0 20px;
+	}
+	.changeLanguage {
+		display: none;
+	}
+}

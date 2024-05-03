@@ -1,0 +1,149 @@
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 140px;
+}
+
+.imageContainer {
+	width: 160px;
+	height: 100%;
+}
+
+.imageContainer img {
+	height: 100%;
+	width: 100%;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.information {
+	padding: 0 10px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #e9e7e4;
+	border-bottom: 1px solid #e9e7e4;
+}
+
+.nameAndDetails {
+	display: flex;
+	flex-direction: column;
+	max-width: 25%;
+}
+.name {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 30px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.details {
+	padding-left: 10px;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.price {
+	font-size: 30px;
+	letter-spacing: -0.05em;
+	line-height: 36px;
+}
+.cantContainer {
+	display: flex;
+}
+.handleCant {
+	padding: 5px 10px;
+	border: none;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.handleCant img {
+	height: 16px;
+	width: 16px;
+	max-height: 100%;
+	max-width: 100%;
+}
+.cant {
+	align-items: center;
+	border: 1px solid #e9e7e4;
+	display: inline-flex;
+	font-size: 16px;
+	height: 40px;
+	justify-content: center;
+	line-height: 19px;
+	overflow: hidden;
+	width: 40px;
+	cursor: default;
+}
+.cantContainerMobile {
+	display: none;
+}
+.delete {
+	color: #898989;
+	font-weight: 500;
+	text-transform: uppercase;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 1rem;
+}
+.delete:hover {
+	color: #000;
+}
+@media screen and (max-width: 760px) {
+	.item {
+		margin-bottom: 40px;
+		height: 220px;
+		width: 100%;
+		position: relative;
+		margin-top: 10px;
+	}
+	.item:first-child {
+		margin-top: 0;
+	}
+	.item:first-child .information {
+		border-top: 0;
+	}
+	.name {
+		font-size: 15px;
+		line-height: 15px;
+	}
+	.imageContainer {
+		height: 100%;
+		aspect-ratio: 1/1;
+	}
+	.nameAndDetails {
+		justify-content: space-between;
+		min-width: 50%;
+		height: 100%;
+		padding: 5% 0;
+	}
+	.details {
+		padding: 0;
+	}
+	.price {
+		padding-right: 20px;
+	}
+	.cantContainer {
+		display: none;
+	}
+	.cantContainerMobile {
+		display: flex;
+	}
+	.delete {
+		position: absolute;
+		bottom: -60px;
+		height: 60px;
+		left: 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

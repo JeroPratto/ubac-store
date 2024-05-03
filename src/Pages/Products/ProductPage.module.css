@@ -1,0 +1,379 @@
+.container {
+	padding-top: 180px;
+	padding-bottom: 100px;
+	background-color: #f7f6f3;
+	display: flex;
+	width: 100%;
+}
+
+.mainContainer {
+	padding-right: 25px;
+	padding-left: 5px;
+	position: relative;
+	width: 66.666%;
+	display: flex;
+	gap: 10px;
+	/* justify-content: space-between; */
+	flex-wrap: wrap;
+}
+.mainImage {
+	position: relative;
+	padding-bottom: 64%;
+	width: 100%;
+	/* object-fit: cover; */
+	/* object-position: 10px; */
+}
+.mainImage img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+.secondImage {
+	position: relative;
+	width: calc(50% - 5px);
+	padding-bottom: 50%;
+}
+.secondImage img,
+.secondImage video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.informationContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 33.333%;
+	padding-left: 25px;
+	padding-right: 20px;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 39px;
+	text-transform: uppercase;
+	color: #212322;
+}
+.colorName {
+	color: #898989;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+}
+.stars {
+	display: flex;
+	align-items: center;
+	color: #212322;
+	font-weight: 500;
+}
+.star {
+	height: 12px;
+	margin-right: 3px;
+	width: 12px;
+}
+.star:last-child {
+	margin-right: 7px;
+}
+.price {
+	margin-top: 10px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+}
+.addProductContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.addProduct {
+	background-color: #212322;
+	margin-top: 15px;
+	height: 70px;
+	width: 100%;
+	max-width: 400px;
+	min-width: 150px;
+	padding: 0 25px;
+	cursor: pointer;
+	border-radius: 60px;
+	color: #fff;
+	font-size: 14px;
+	border: none;
+}
+
+.colorsContainer {
+	border-top: 1px solid #e9e7e4;
+	margin: 30px 0;
+	padding-top: 30px;
+	width: 100%;
+	display: flex;
+	gap: 20px;
+}
+
+.colors {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.nameColor {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+
+.colorList {
+	display: flex;
+	list-style-type: none;
+	position: relative;
+}
+
+.color {
+	margin: 5px 10px 5px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.linkColor {
+	height: 24px;
+	width: 24px;
+	position: relative;
+	border: none;
+	border-radius: 100%;
+}
+.linkColor.current {
+	transform: scale(0.6);
+}
+.linkColor span {
+	height: calc(24px * 1.7);
+	width: calc(24px * 1.7);
+	position: absolute;
+	border: 2px solid #212322;
+	border-radius: 100%;
+	transform: translate(-20%, -20%);
+	top: 0;
+	left: 0;
+}
+
+.hommeOrFemme {
+	display: flex;
+	width: 100%;
+	margin-bottom: 30px;
+	height: 50px;
+	border-bottom: 1px solid #e9e7e4;
+	justify-content: center;
+	align-items: center;
+}
+.hommeOrFemme button {
+	cursor: pointer;
+	color: #898989;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 50%;
+	border: none;
+	font-weight: 600;
+	background-color: transparent;
+}
+.hommeOrFemme .current {
+	background-color: #212322;
+	color: #fff;
+}
+.selectSize {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 16px;
+	color: #212322;
+	margin-bottom: 16px;
+}
+.selectSize span {
+	color: #898989;
+	font-size: 12px;
+	border-bottom: 1px solid #212322;
+}
+
+.sizeList {
+	display: flex;
+	width: 100%;
+	list-style-type: none;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.size {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	height: 45px;
+	line-height: 17px;
+	margin-bottom: 10px;
+	min-width: 45px;
+	padding: 0 10px;
+	position: relative;
+	text-transform: capitalize;
+	transition: color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+		border 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+		background 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	background-color: transparent;
+}
+
+.size.current {
+	background-color: #212322;
+	border-color: #212322;
+	color: #fff;
+}
+
+.size:hover {
+	border-color: #212322;
+}
+
+.free {
+	color: #898989;
+	font-size: 12px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	text-align: center;
+}
+.free span {
+	color: #212322;
+	font-weight: 700;
+}
+
+.coton {
+	width: 100%;
+	aspect-ratio: 1/1;
+	background-color: #000;
+	max-height: 400px;
+	position: relative;
+}
+.coton img {
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+}
+.cotonText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 36px;
+	line-height: 44px;
+	line-height: 44px;
+	width: 100%;
+	text-align: center;
+}
+
+.materials {
+	margin: 40px 0;
+	width: 100%;
+}
+.materialsTitle {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #212322;
+	margin-bottom: 20px;
+}
+.materialList {
+	list-style-type: none;
+}
+
+.materialItem {
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 17px;
+	padding-left: 40px;
+	font-weight: 500;
+	color: #212322;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.materialItem span {
+	color: #bdbbb6;
+}
+.materialItem::before {
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 15px;
+	height: 6px;
+	width: 6px;
+	background-color: #bdbbb6;
+	border-radius: 100%;
+}
+
+@media screen and (max-width: 980px) {
+	.container {
+		padding-top: 120px;
+		flex-direction: column;
+		padding-bottom: 0px;
+	}
+	.mainContainer {
+		width: 100%;
+		padding: 0;
+	}
+	.mainImage {
+		padding: 0;
+		width: 100%;
+		aspect-ratio: 1/1;
+		/* height: 100vh; */
+	}
+	.secondImage {
+		display: none;
+	}
+	.informationContainer {
+		width: 100%;
+		padding: 40px 20px;
+		overflow: hidden;
+	}
+	.colorsContainer {
+		border: none;
+		padding: 0;
+		margin-top: 20px;
+	}
+	.hommeOrFemme {
+		border-top: 1px solid #e9e7e4;
+	}
+	.coton {
+		width: calc(100% + 80px);
+		left: -40px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.container {
+		padding-top: 0;
+		padding-bottom: 0px;
+	}
+	.informationContainer {
+		padding-top: 20px;
+	}
+	.title {
+		font-size: 22px;
+	}
+}

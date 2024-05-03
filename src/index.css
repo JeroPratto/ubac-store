@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--font-family);
+}
+
+body {
+	overflow: var(--state-body-menu);
+}
+:root {
+	--state-body-menu: auto;
+	--ubac-logo-color: #fff;
+	--font-family: 'Inter', sans-serif;
+	--header-current-color: #fff;
+	--header-bg-color: transparent;
+}
+.ubac-logo {
+	fill: var(--ubac-logo-color);
+}
