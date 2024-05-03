@@ -10,7 +10,7 @@ const MaleOrFemale: React.FC = () => {
 			</picture>
 			<div className={styles.titleAndPre}>
 				<p className={styles.pre}>NOUVEAUTÉS</p>
-				<h1 className={styles.title}>AXOLO LIN</h1>
+				<h2 className={styles.title}>AXOLO LIN</h2>
 			</div>
 			<div className={styles.linksContainer}>
 				<div className={styles.linkContainer}>

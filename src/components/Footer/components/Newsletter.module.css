@@ -26,7 +26,7 @@
 }
 
 .desc {
-	color: #898989;
+	color: #595959;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -42,7 +42,7 @@
 .inputEmail {
 	border: 1px solid #e9e7e4;
 	border-radius: 60px;
-	color: #898989;
+	color: #595959;
 	flex: none;
 	font-size: 16px;
 	height: 70px;

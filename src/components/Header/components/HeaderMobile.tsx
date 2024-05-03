@@ -51,7 +51,11 @@ const HeaderMobile: React.FC = () => {
 	return (
 		<>
 			<div className={styles.btnsContainer}>
-				<Link to='/login' className={styles.userLogo}>
+				<Link
+					to='/login'
+					className={styles.userLogo}
+					aria-label='Go to login page'
+				>
 					<UserLogo />
 				</Link>
 				<button
