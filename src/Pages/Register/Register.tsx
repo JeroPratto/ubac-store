@@ -15,7 +15,7 @@ const Register: React.FC = () => {
 	return (
 		<div className={styles.setup}>
 			<div className={styles.container}>
-				<h1 className={styles.title}>Créer mon compte</h1>
+				<h1 className={styles.title}>Créer compte</h1>
 				<div className={styles.links}>
 					<Link to='/login'>Connexion</Link>
 					<Link to='/register' className={styles.current}>
