@@ -1,8 +1,12 @@
-import { Suspense, lazy, useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import ErrorPage from './Pages/ErrorPage/ErrorPage'
+import { Femme } from './Pages/Femme'
 import { Home } from './Pages/Home'
+import { Homme } from './Pages/Homme'
+import { Login } from './Pages/Login'
 import { Nouveautes } from './Pages/Nouveautes'
+import { Register } from './Pages/Register'
 import { ProductPageGuard } from './Pages/utils/ProductPageGuard'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
@@ -21,10 +25,6 @@ function App() {
 			window.removeEventListener('storage', handleStorageChange)
 		}
 	})
-	const Login = lazy(() => import('./Pages/Login/Login'))
-	const Register = lazy(() => import('./Pages/Register/Register'))
-	const Homme = lazy(() => import('./Pages/Homme/Homme'))
-	const Femme = lazy(() => import('./Pages/Femme/Femme'))
 
 	return (
 		<BrowserRouter>

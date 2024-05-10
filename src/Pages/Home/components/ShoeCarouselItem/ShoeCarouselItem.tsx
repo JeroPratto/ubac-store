@@ -9,7 +9,7 @@ const ShoeCarouselItem: React.FC = () => {
 			{slides.map((product, index) => (
 				<div className={styles.container} key={index}>
 					<Link
-						to={`/products/${product.id}/${product.colorsAvailable[0].color[0].link}`}
+						to={`/products/${product.id}/${product.color}`}
 						className={styles.imageContainer}
 					>
 						<img src={product.urlImg} alt={product.title} />

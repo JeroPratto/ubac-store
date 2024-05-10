@@ -2,7 +2,7 @@ import { useCartStore } from '@/store/cartStore'
 import { useOpenCartStore } from '@/store/openCartStore'
 import { ShoeInterface } from '@/utils/getShoesItems'
 import { useState } from 'react'
-import { Link, useLocation, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import styles from './ProductPage.module.css'
 import star from '/icons/star.svg'
 
@@ -28,7 +28,7 @@ const ProductPage: React.FC<ProductPageProps> = ({ product, nameColor }) => {
 				id: `${product.id}-${color}-${selectedSize}`,
 				urlImage: product.urlPageImg,
 				name: product.title,
-				color: color,
+				color: nameColor,
 				size: selectedSize,
 				price: product.price,
 				cant: 1,
@@ -55,6 +55,7 @@ const ProductPage: React.FC<ProductPageProps> = ({ product, nameColor }) => {
 									currentColor={color}
 									listColor={colors.color}
 									name={colors.title}
+									id={product.id}
 								/>
 							</div>
 						))}
@@ -115,11 +116,13 @@ interface ColorListProps {
 	listColor: { name: string; color: string; link: string }[]
 	currentColor: string | undefined
 	name: string
+	id: string
 }
 const ColorList: React.FC<ColorListProps> = ({
 	listColor,
 	currentColor,
 	name,
+	id,
 }) => {
 	return (
 		<>
@@ -135,7 +138,7 @@ const ColorList: React.FC<ColorListProps> = ({
 								<span></span>
 							</p>
 						) : (
-							<LinkColor color={data.color} link={data.link} />
+							<LinkColor color={data.color} link={data.link} id={id} />
 						)}
 					</li>
 				))}
@@ -143,15 +146,19 @@ const ColorList: React.FC<ColorListProps> = ({
 		</>
 	)
 }
-const LinkColor = ({ color, link }: { color: string; link: string }) => {
-	const { pathname } = useLocation()
-	const parts = pathname.split('/')
-	parts.pop()
-	const newUrl = `${parts.join('/')}/${link}`
 
+const LinkColor = ({
+	color,
+	link,
+	id,
+}: {
+	color: string
+	link: string
+	id: string
+}) => {
 	return (
 		<Link
-			to={newUrl}
+			to={`/products/${id}/${link}`}
 			style={{ backgroundColor: color }}
 			className={styles.linkColor}
 		></Link>

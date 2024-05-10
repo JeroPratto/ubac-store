@@ -61,6 +61,7 @@ const Cart: React.FC = () => {
 					Continuer mes achast
 				</button>
 				<Link
+					onClick={closeCart}
 					to='/login'
 					className={`${styles.commander} ${
 						availableBts ? styles.disabled : ''
