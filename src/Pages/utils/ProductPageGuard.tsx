@@ -19,23 +19,18 @@ export const ProductPageGuard = () => {
 		const colorName = foundColor.color.find((c) => c.link === color)!.name
 		return colorName
 	}
-
 	useEffect(() => {
 		try {
-			const product = getShoeById(id)
+			const product = getShoeById(id, color)
 			setProduct(product)
 			const name = getNameColor(product)
 			setNameColor(name)
 		} catch (error) {
 			setError(true)
 		}
-	}, [])
+	}, [id, color])
 
-	if (!product) return <SkeletonProductPage />
-
-	return error ? (
-		<Navigate replace to='/404' />
-	) : (
-		<ProductPage product={product!} nameColor={nameColor} />
-	)
+	if (!product && !error) return <SkeletonProductPage />
+	else if (error) return <Navigate replace to='/404' />
+	else return <ProductPage product={product!} nameColor={nameColor} />
 }
