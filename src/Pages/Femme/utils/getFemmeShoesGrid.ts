@@ -15,7 +15,7 @@ const getFemmeShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO BLANC',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-blanc/beige',
+			link: '/products/koto/blanc',
 		},
 		{
 			specialItem: false,
@@ -23,7 +23,7 @@ const getFemmeShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO NOIR',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-noir/beige',
+			link: '/products/koto/noir',
 		},
 		{
 			specialItem: false,
@@ -31,7 +31,7 @@ const getFemmeShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO KAKI',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-kaki/beige',
+			link: '/products/koto/kaki',
 		},
 		{
 			specialItem: false,
@@ -39,7 +39,7 @@ const getFemmeShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO DENIM',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-denim/beige',
+			link: '/products/koto/denim',
 		},
 		{
 			specialItem: false,
@@ -47,7 +47,7 @@ const getFemmeShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO JAUNE',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-jaune/beige',
+			link: '/products/koto/jaune',
 		},
 		{
 			specialItem: false,
@@ -55,16 +55,15 @@ const getFemmeShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO ROSE',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-jaune/beige',
+			link: '/products/koto/noir',
 		},
-		//
 		{
 			specialItem: false,
-			urlImage: '/shoes/axolo-lin-turqouise-page.avif',
-			title: 'KOTO TURQUOISE',
-			line: 'Lin',
-			price: 165.0,
-			link: '/products/axolo-lin-turqouise/beige',
+			urlImage: '/shoes/vola-gris-polaire-page.avif',
+			title: 'VOLA GRIS-POLAIRE',
+			line: 'Laine recyclé',
+			price: 129.0,
+			link: '/products/vola/gris-polaire',
 		},
 		{
 			specialItem: true,
@@ -77,23 +76,16 @@ const getFemmeShoesGrid = (): ShoeGrid[] => {
 			title: 'VOLA GRIS-MINERAL',
 			line: 'Laine recyclé',
 			price: 129.0,
-			link: '/products/vola-gris-mineral/beige',
+			link: '/products/vola/gris-mineral',
 		},
-		{
-			specialItem: false,
-			urlImage: '/shoes/vola-gris-polaire-page.avif',
-			title: 'VOLA GRIS-POLAIRE',
-			line: 'Laine recyclé',
-			price: 129.0,
-			link: '/products/vola-gris-polaire/beige',
-		},
+
 		{
 			specialItem: false,
 			urlImage: '/shoes/vola-bleu-marin-page.avif',
 			title: 'VOLA BLEU-MARIN',
 			line: 'Laine recyclé',
 			price: 129.0,
-			link: '/products/vola-bleu-marin/beige',
+			link: '/products/vola/belu-marin',
 		},
 		{
 			specialItem: false,
@@ -101,7 +93,7 @@ const getFemmeShoesGrid = (): ShoeGrid[] => {
 			title: 'VOLA VERT-OLIVE',
 			line: 'Laine recyclé',
 			price: 129.0,
-			link: '/products/vola-vert-olive/beige',
+			link: '/products/vola/vert-olive',
 		},
 		{
 			specialItem: false,
@@ -109,7 +101,7 @@ const getFemmeShoesGrid = (): ShoeGrid[] => {
 			title: 'BASKET VOLA ROUGE OCRE',
 			line: 'Laine recyclé',
 			price: 99.0,
-			link: '#',
+			link: '/products/vola/vert-olive',
 		},
 	]
 	return data

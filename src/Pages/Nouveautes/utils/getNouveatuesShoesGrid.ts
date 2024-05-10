@@ -13,7 +13,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'AXOLO LIN BEIGE',
 			line: 'Lin',
 			price: 165.0,
-			link: '/products/axolo-lin-geige/beige',
+			link: '/products/axolo-lin/beige',
 		},
 		{
 			specialItem: false,
@@ -21,7 +21,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'AXOLO LIN VERT-BRUN',
 			line: 'Lin',
 			price: 165.0,
-			link: '/products/axolo-lin-vert-brun/beige',
+			link: '/products/axolo-lin/vert-brun',
 		},
 		{
 			specialItem: false,
@@ -29,7 +29,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'AXOLO LIN CAMEL',
 			line: 'Lin',
 			price: 165.0,
-			link: '/products/axolor-lin-camel/beige',
+			link: '/products/axolo-lin/camel',
 		},
 		{
 			specialItem: false,
@@ -37,7 +37,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO TURQUOISE',
 			line: 'Lin',
 			price: 165.0,
-			link: '/products/axolo-lin-turqouise/beige',
+			link: '/products/axolo-lin/turquoise',
 		},
 		{
 			specialItem: false,
@@ -45,7 +45,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'AXOLO LIN ROSE',
 			line: 'Lin',
 			price: 165.0,
-			link: '/products/axolor-lin-rose/beige',
+			link: '/products/axolo-lin/rose',
 		},
 		//
 		{ specialItem: true, urlImage: '/femme/shoes/special.avif', link: '#' },
@@ -55,7 +55,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO BLANC',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-blanc/beige',
+			link: '/products/koto/blanc',
 		},
 		{
 			specialItem: false,
@@ -63,7 +63,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO NOIR',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-noir/beige',
+			link: '/products/koto/noir',
 		},
 		{
 			specialItem: false,
@@ -71,7 +71,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO KAKI',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-kaki/beige',
+			link: '/products/koto/kaki',
 		},
 		{
 			specialItem: false,
@@ -79,7 +79,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO DENIM',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-denim/beige',
+			link: '/products/koto/denim',
 		},
 		{
 			specialItem: false,
@@ -87,7 +87,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO JAUNE',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-jaune/beige',
+			link: '/products/koto/jaune',
 		},
 		{
 			specialItem: false,
@@ -95,7 +95,7 @@ const getNouveatuesShoesGrid = (): ShoeGrid[] => {
 			title: 'KOTO ROSE',
 			line: 'Coton recyclé',
 			price: 135.0,
-			link: '/products/koto-jaune/beige',
+			link: '/products/koto/jaune',
 		},
 	]
 	return data
