@@ -1,4 +1,4 @@
-# Ubac store
+# Ubac store clon
 
 ## How to install and Run
 
